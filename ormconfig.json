@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": "5432",
+    "username": "tekdreher",
+    "password": "ilfr741852",
+    "database": "nlw04"
+}

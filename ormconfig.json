@@ -4,5 +4,9 @@
     "port": "5432",
     "username": "tekdreher",
     "password": "ilfr741852",
-    "database": "nlw04"
+    "database": "nlw04",
+    "migrations": ["./src/database/migrations/**.ts"],
+    "cli":{
+        "migrationsDir": "./src/database/migrations"
+    }
 }

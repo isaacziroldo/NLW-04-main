@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
-import { getRepository } from 'typeorm'
-import { User } from '../models/User'
+import { getCustomRepository } from 'typeorm'
+
+import { UserRepository } from '../repositories/UsersRepository'
 
 class UserController {
 
@@ -8,7 +9,7 @@ class UserController {
 
         const {name, email} = request.body
         
-        const usersRepository = getRepository(User)
+        const usersRepository = getCustomRepository(UserRepository)
 
         const userAlreadyExists = await usersRepository.findOne({
             email
